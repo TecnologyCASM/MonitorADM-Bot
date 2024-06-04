@@ -1,9 +1,11 @@
 # Mi HomePortainer:
 - `Portainer "MGMT Container"`
+- `Docker Controller Bot "MGMT Container Bot Telegram"`
   
-Este proyecto esta diseñado con la finalidad de utilizarse en una red domestica, utilizando una Raspberry Pi B 8GB con dispositivo, donde contamos con la configuracion de un servicio de administracion de contenedores de docker como Portainer.
+Este proyecto esta diseñado con la finalidad de utilizarse en una red domestica, utilizando una Raspberry Pi B 8GB con dispositivo, donde contamos con la configuracion de dos servicios de administracion de contenedores de docker como Portainer y Docker Controller.
 
 ![image](https://github.com/TecnologyCASM/PiHoleUnbound-WG/assets/107158068/dc9c6986-a497-49c6-a1f5-05eeb92cb2de)
+![image](https://github.com/TecnologyCASM/PiHoleUnbound-WG/assets/107158068/df035d60-2d1a-466c-8ccd-cb2c30bd6b7c)
 
 # Prerequisitos:
 * `Raspberry Pi 4 Modelo B 2GB`. https://amzn.to/3K7diXR
@@ -67,10 +69,10 @@ docker run hello-world
 ![image](https://github.com/TecnologyCASM/PiHoleUnbound-WG/assets/107158068/58f35f2b-9c35-4381-8186-8f37298e170a)
 
 # Descarga y Ejecucion del proyecto HomePortainer:
-1) Ejecutar el siguiente comando para solo descargar el proyecto `HomePortainer` y acceder a la carpeta del proyecto:
+1) Ejecutar el siguiente comando para solo descargar el proyecto `PortainerADM-Bot` y acceder a la carpeta del proyecto:
 ```shell
-git clone https://github.com/TecnologyCASM/HomePortainer.git
-cd HomePortainer
+git clone https://github.com/TecnologyCASM/PortainerADM-Bot.git
+cd PortainerADM-Bot
 ls -la
 docker compose up -d && docker ps
 ```
