@@ -75,7 +75,7 @@ git clone https://github.com/TecnologyCASM/PortainerADM-Bot.git
 cd PortainerADM-Bot
 ls -la
 ```
-2) Debe de ir al archivo .env y modificar los siguientes parametros:
+2) Debe de ir al archivo `.env` y modificar los siguientes parametros:
 ```shell
 # Variables de entorno para Docker Controller Bot
 BOT_TOKEN="Mi Token"
