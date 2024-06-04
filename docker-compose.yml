@@ -16,3 +16,25 @@ services:
     ports:
       - "9000:9000/tcp" # Puerto TCP Administracion Web.
     restart: unless-stopped
+#---------------------------------------------------------------#
+# Servicio Docker Controller Bot
+    docker-controller-bot:
+        environment:
+            - TELEGRAM_TOKEN=7357142099:AAH-QoEr1hlAqIFXO1pK2ZNSZ55oClPkSk8
+            - TELEGRAM_ADMIN=1251187129
+            - CONTAINER_NAME=DOCKER-BOT
+            - TZ=Europe/Madrid
+            - TELEGRAM_THREAD=1
+            - CHECK_UPDATES=1
+            - CHECK_UPDATE_EVERY_HOURS=24
+            - BUTTON_COLUMNS=2
+            - LANGUAGE=ES
+            - EXTENDED_MESSAGES=0
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock # NO CAMBIAR
+            - /ruta/para/guardar/las/programaciones:/app/schedule # CAMBIAR LA PARTE IZQUIERDA
+        image: dgongut/docker-controller-bot:latest
+        container_name: DOCKER-BOT
+        restart: always
+        network_mode: host
+        tty: true
