@@ -59,8 +59,8 @@ Este comando nos llevara a la siguente pantalla:
 ```shell
 sudo apt update && sudo apt-get full-upgrade -y &&
 sudo curl -fsSL https://get.docker.com/ -o get-docker.sh && sudo sh get-docker.sh &&
-sudo usermod -aG docker ${USER} && sudo reboot
-
+sudo usermod -aG docker ${USER} &&
+sudo reboot
 ```
 2) Una vez la raspberry pi halla iniciado y para validar que el servicio de docker esta instalado, procederemos a descargar un contenedor de prueba llamado `Helo-Wold`:
 ```shell
