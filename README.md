@@ -76,4 +76,6 @@ cd PortainerADM-Bot
 ls -la
 docker compose up -d && docker ps
 ```
+![image](https://github.com/TecnologyCASM/PortainerADM-Bot/assets/107158068/cd69904b-e0be-4c02-a7d4-f0729300170c)
+
 MUCHAS GRACIAS POR UTILIZAR MI APORTE A LA COMUNIDAD...
