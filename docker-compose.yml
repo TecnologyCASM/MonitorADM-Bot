@@ -1,0 +1,18 @@
+# Servicio Portainer
+version: '3.8'
+services:
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: PORTAINER-ADM
+    hostname: "Portainer-ADM"
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      TZ: "America/Santo_Domingo"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./portainer-data:/data
+    ports:
+      - "9000:9000/tcp" # Puerto TCP Administracion Web.
+    restart: unless-stopped
