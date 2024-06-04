@@ -74,8 +74,18 @@ docker run hello-world
 git clone https://github.com/TecnologyCASM/PortainerADM-Bot.git
 cd PortainerADM-Bot
 ls -la
+```
+2) Debe de ir al archivo .env y modificar los siguientes parametros:
+```shell
+# Variables de entorno para Docker Controller Bot
+BOT_TOKEN="Mi Token"
+CHAT_ID="Mi ID"
+```
+3) Luego de trabajar en el paso #2, solo resta ejecutar el siguiente comando:
+```shell
 docker compose up -d && docker ps
 ```
+
 ![image](https://github.com/TecnologyCASM/PortainerADM-Bot/assets/107158068/cd69904b-e0be-4c02-a7d4-f0729300170c)
 
 MUCHAS GRACIAS POR UTILIZAR MI APORTE A LA COMUNIDAD...
