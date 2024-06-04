@@ -16,6 +16,7 @@ services:
     ports:
       - "9000:9000/tcp" # Puerto TCP Administracion Web.
     restart: unless-stopped
+    network_mode: bridge
 #---------------------------------------------------------------#
 # Servicio Docker Controller Bot
   docker-controller-bot:
