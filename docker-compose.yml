@@ -39,3 +39,24 @@ services:
     restart: always
     network_mode: host
     tty: true
+#---------------------------------------------------------------#
+# Servicio Monitoreo
+  netdata:
+    image: netdata/netdata
+    container_name: NETDATA
+    hostname: "NetData"
+    security_opt:
+      - apparmor=unconfined
+    cap_add:
+      - SYS_PTRACE
+    environment:
+      - TZ=${TZ}  
+    volumes:
+      - '/etc/os-release:/host/etc/os-release:ro'
+      - '/sys:/host/sys:ro'
+      - '/proc:/host/proc:ro'
+      - '/etc/group:/host/etc/group:ro'
+      - '/etc/passwd:/host/etc/passwd:ro'
+    ports:
+      - '19999:19999/tcp'
+    restart: always  
