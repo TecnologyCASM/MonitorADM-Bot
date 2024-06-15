@@ -7,6 +7,7 @@ Este proyecto esta diseñado con la finalidad de utilizarse en una red domestica
 ![image](https://github.com/TecnologyCASM/PiHoleUnbound-WG/assets/107158068/dc9c6986-a497-49c6-a1f5-05eeb92cb2de)
 ![image](https://github.com/TecnologyCASM/PiHoleUnbound-WG/assets/107158068/df035d60-2d1a-466c-8ccd-cb2c30bd6b7c)
 ![image](https://github.com/TecnologyCASM/MonitorADM-Bot/assets/107158068/89ffaebc-c4e2-4519-bcfb-a34be0f25ba4)
+![image](https://github.com/TecnologyCASM/MonitorADM-Bot/assets/107158068/dfef5a8a-ed8c-4d4f-a070-804776c9c2db)
 
 # Prerequisitos:
 * `Raspberry Pi 4 Modelo B 2GB`. https://amzn.to/3K7diXR
