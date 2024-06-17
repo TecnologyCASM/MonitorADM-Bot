@@ -1,6 +1,6 @@
-# Servicio Portainer
-version: '3.8'
+---
 services:
+# Servicio Portainer
   portainer:
     image: portainer/portainer-ce:latest
     container_name: PORTAINER-ADM
