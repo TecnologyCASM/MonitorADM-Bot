@@ -41,8 +41,6 @@ services:
     tty: true
 #---------------------------------------------------------------#
 # Servicio Monitoreo
-version: '3'
-services:
   netdata:
     image: netdata/netdata
     container_name: NETADATA
